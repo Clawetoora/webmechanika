@@ -1,0 +1,114 @@
+body {
+  background: linear-gradient(#118ab2, #06d6a0);
+  height: 100vh;
+  font-family: "Kanit", sans-serif;
+}
+
+h1 {
+  color: #caf0f8;
+}
+
+.game-name {
+  background-color: #06d69e67;
+  margin-top: 30px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.144);
+}
+
+.player-names {
+  text-align: center;
+  margin-top: 20px;
+  font-size: large;
+  font-weight: 600;
+  animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.btn {
+  margin-top: 50px;
+  background-color: bisque;
+}
+
+.btn-game {
+  margin-top: 50px;
+  background-color: bisque;
+  width: 35%;
+  align-self: center;
+}
+
+.taskai {
+  font-size: 50px;
+}
+
+.marked {
+  /* background-color: red; */
+  animation: blinking 2s infinite;
+  border-radius: 10px;
+}
+
+@keyframes blinking {
+  0% {
+    background-color: none;
+  }
+
+  50% {
+    background-color: #5344a9;
+  }
+
+  100% {
+    background-color: none;
+  }
+}
+
+#popup {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#80d0c7, #0093e9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 60px;
+}
+
+#play-again {
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  padding: 20px 35px;
+  animation: blinking2 2s infinite;
+}
+
+@keyframes blinking2 {
+  0% {
+    background-color: none;
+  }
+
+  50% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: none;
+  }
+}
+
+#winner {
+  font-size: 30px;
+}
